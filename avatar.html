@@ -1,15 +1,134 @@
 <html>
 	<head>
 		<style>
+                    .avatar_face_part{
+                        position: absolute;
+                        width:50px;                        
+                        height:50px;
+                    }
+                    
+                    .btn{
+                        display: inline-block;
+                    }
+                    #avatar_wrap{
+                        display: inline-block;
+                    }
+                                        
+                    #fondo{
+                        background: url('img/ninabase.png') no-repeat 0px 0px;
+                        width:200px;                        
+                        height:200px;
+                    }
+                    #avatar_face_wrap{
+                        position: relative;
+                        top: 3px;
+                        left: 30px;
+                    }
+                    #ojos{
+                        background: url('img/ojos.png') no-repeat 0px 0px;
+                    }
+                    #cejas{
+                        background: url('img/cejas.png') no-repeat 0px 0px;
+                    }
+                    #nariz{
+                        background: url('img/nariz.png') no-repeat 0px 0px;
+                    }
+                    #bocas{
+                        background: url('img/bocas.png') no-repeat 0px 0px;
+                    }
+                    #imprimir{
+                        position: relative;
+                        left: 100px;
+                        text-align: center;
+                        display: inline-block;
+                        background: #FF0;
+                        border: 1px;
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid;
+                    }
+                                    
 		</style>
 		<script src="js/jquery-1.7.2.min.js"> </script>
+                <script type="text/javascript">
+                    $(document).ready(init);
+                    
+                    var cont_obj = {"ojos":0,"nariz":0,"bocas":0,"cejas":0};
+                    var selected = "";
+                                        
+                    
+                    function init(e){
+                          $("#btn_izq").click(btn_izq_cfun);
+                          $("#btn_der").click(btn_der_cfun);
+                          $("#ojo_btn").click(btn_ojo);
+                          $("#ceja_btn").click(btn_ceja);
+                          $("#boca_btn").click(btn_boca);
+                          $("#nariz_btn").click(btn_nariz);
+                    }
+                    
+                    function btn_izq_cfun(e){
+                        if(cont_obj[selected]>=0){
+                        --cont_obj[selected];
+                        console.log("izquierda");
+                        updateAvatar();
+                        }
+                    }                
+                    function btn_der_cfun(e){
+                        if(cont_obj[selected] <3){
+                        ++cont_obj[selected];
+                        console.log("derecha")
+                        updateAvatar();
+                        }
+                    }                    
+                                        
+                    function btn_ojo(e){
+                        selected = "ojos";
+                        console.log("ojos");
+                        $("#imprimir").html(selected);
+                    }                    
+                    
+                    function btn_ceja(e){
+                        selected = "cejas";
+                        console.log("cejas");
+                        $("#imprimir").html(selected);
+                    }
+                                        
+                    function btn_boca(e){
+                        selected = "bocas";
+                        console.log("bocas");
+                        $("#imprimir").html(selected);
+                    }
+                                        
+                    function btn_nariz(e){
+                        selected = "nariz";
+                        console.log("nariz");
+                        $("#imprimir").html(selected);
+                    }
+                    
+                    function updateAvatar(){
+                        $("#"+selected).css("background", "url('img/"+selected + ".png') no-repeat -"+ (cont_obj[selected] * 50) +"px 0px");
+                    }               
+                    
+                </script>
 	</head>
 	<body>
-		<div id="avatar_wrap">
-		    <div id="fondo" class="avatar_part"></div>
-		    <div id="cejas" class="avatar_part"></div>
-		    <div id="nariz" class="avatar_part"></div>
-		    <div id="boca" class="avatar_part"></div>
-		</div>
+                <div id="btn_izq" class="btn"><</div>
+                <div id="ojo_btn" class="btn">OJOS</div>
+                <div id="ceja_btn" class="btn">CEJAS</div>
+                <div id="boca_btn" class="btn">BOCAS</div>
+                <div id="nariz_btn" class="btn">NARIZ</div>
+                     
+                <div id="avatar_wrap">
+                        <div id="fondo" class="avatar_face_part"></div>
+                    <div id="avatar_face_wrap">
+                        <div id="ojos" class="avatar_face_part"></div>
+                        <div id="cejas" class="avatar_face_part"></div>
+                        <div id="nariz" class="avatar_face_part"></div>
+                        <div id="bocas" class="avatar_face_part"></div>
+                        </div>
+                </div>
+                <div id="btn_der" class="btn">></div>
+                <div id="imprimir"></div>
+                
 	</body>
 </html>
