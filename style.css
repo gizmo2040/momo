@@ -43,8 +43,8 @@
 #avatar_wrap{
     position: absolute;
     display: inline-block;
-    left: 220px;
-    top: 50px;
+    left: 460px;
+    top: 186px;
 }
 #fondoavatar{
     background: url('img/ninabase.png') no-repeat 0px 0px;
@@ -92,7 +92,11 @@
 #shoes{
     background: url('img/shoes.png') no-repeat 0px 0px;
 }
-
+#fondo{
+     background: url('img/fondo.png') no-repeat 0px 0px;
+     width: 960px;
+     height: 600px;
+}
 
 #flechas{
     position: absolute;
@@ -101,21 +105,36 @@
     top: 160px;  
     
 }
+#flechas #btn_izq{
+    position: relative;
+    top: 117px;
+    left: 175px;
+}
+
 #flechas #btn_der{
     position: relative;
-left: 185px;
-top: -20px;
+    left: 428px;
+    top: 5px;
+}
+#botones{
+    position: relative;
+    left: 170px;
+    top: 150px;
 }
 
 
 #imprimir{
-     position: absolute;
-    top: 15px;
-    left: 235px;
+    position: absolute;
+    top: 92px;
+    left: 430px;
     text-align: center;
     display: inline-block;
-    background: #FFFFCC;
-    width: 70px;
-    height: 20px;
-    border: 1px solid;
+    background: #FFC;
+    width: 150px;
+    height: 29px;
+   /* border: 1px solid;*/
+    
+    font-size: 25px;
+    font-weight: bold;
+    color: #6C1786;
 }                                  		
