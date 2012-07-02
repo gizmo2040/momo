@@ -1,189 +1,28 @@
 <html>
 	<head>
-		<style>
-                    .avatar_face_part{
-                        position: absolute;
-                        width:50px;                        
-                        height:50px;
-                    }
-                     .avatar_body_part{
-                        position: absolute;
-                        width:90px;                        
-                        height:323px;
-                        top: -5px;
-                        left: -22px;
-                    }
-                                        
-                    .btn{
-                        display: inline-block;
-                    }
-                    #avatar_wrap{
-                        display: inline-block;
-                    }
-                                        
-                    #fondo{
-                        background: url('img/ninabase.png') no-repeat 0px 0px;
-                        width:200px;                        
-                        height:340px;
-                    }
-                    #avatar_face_wrap{
-                        position: relative;
-                        top: 3px;
-                        left: 30px;
-                    }
-                    #ojos{
-                        background: url('img/ojos.png') no-repeat 0px 0px;
-                    }
-                    #cejas{
-                        background: url('img/cejas.png') no-repeat 0px 0px;
-                    }
-                    #nariz{
-                        background: url('img/nariz.png') no-repeat 0px 0px;
-                    }
-                    #bocas{
-                        background: url('img/bocas.png') no-repeat 0px 0px;
-                    }
-                    #pelo{
-                        background: url('img/pelo.png') no-repeat 0px 0px;
-                    }
-                    #bup{
-                        background: url('img/bup.png') no-repeat 0px 0px;
-                    }
-                    #bdown{
-                        background: url('img/bdown.png') no-repeat 0px 0px;
-                    }
-                    #shoes{
-                        background: url('img/shoes.png') no-repeat 0px 0px;
-                    }
-                    #imprimir{
-                        position: relative;
-                        left: 100px;
-                        text-align: center;
-                        display: inline-block;
-                        background: #FF0;
-                        border: 1px;
-                        width: 70px;
-                        height: 20px;
-                        border: 1px solid;
-                    }
-                                    
-		</style>
+		
+		<link href="style.css"  type="text/css" rel="stylesheet" />
 		<script src="js/jquery-1.7.2.min.js"> </script>
-                <script type="text/javascript">
-                    $(document).ready(init);
-                    
-                    var cont_obj_face = {"ojos":0,"nariz":0,"bocas":0,"cejas":0};
-                    var cont_obj_body = {"pelo":0,"bup":0,"bdown":0,"shoes":0};
-                    var selected = "";
-                                        
-                    
-                    function init(e){
-                          $("#btn_izq").click(btn_izq_cfun);
-                          $("#btn_der").click(btn_der_cfun);
-                          $("#ojo_btn").click(btn_ojo);
-                          $("#ceja_btn").click(btn_ceja);
-                          $("#boca_btn").click(btn_boca);
-                          $("#nariz_btn").click(btn_nariz);
-                          $("#pelo_btn").click(btn_pelo);
-                          $("#bup_btn").click(btn_bup);
-                          $("#bdown_btn").click(btn_bdown);
-                          $("#shoes_btn").click(btn_shoes);
-                    }
-                    
-                    function btn_izq_cfun(e){                        
-                        if(cont_obj_face.hasOwnProperty(selected)){
-                          var pixels = 50;    
-                          var cont_obj = cont_obj_face; 
-                        }else{
-                          var pixels = 100;    
-                          var cont_obj = cont_obj_body;                             
-                        }
-                        
-                        if(cont_obj[selected]>=0){
-                        --cont_obj[selected];
-                        console.log("izquierda");
-                        updateAvatar(cont_obj,pixels);
-                        }
-                    }                
-                    function btn_der_cfun(e){
-                        if(cont_obj_face.hasOwnProperty(selected)){
-                          var pixels = 50;    
-                          var cont_obj = cont_obj_face; 
-                        }else{
-                          var pixels = 100;    
-                          var cont_obj = cont_obj_body;                             
-                        }
-                        if(cont_obj[selected] <3){
-                        ++cont_obj[selected];
-                        console.log("derecha")
-                        updateAvatar(cont_obj,pixels);
-                        }
-                    }                    
-                                       
-                    function btn_ojo(e){
-                        selected = "ojos";
-                        console.log("ojos");
-                        $("#imprimir").html(selected);
-                    }                    
-                    
-                    function btn_ceja(e){
-                        selected = "cejas";
-                        console.log("cejas");
-                        $("#imprimir").html(selected);
-                    }
-                                        
-                    function btn_boca(e){
-                        selected = "bocas";
-                        console.log("bocas");
-                        $("#imprimir").html(selected);
-                    }
-                                        
-                    function btn_nariz(e){ 
-                        selected = "nariz";
-                        console.log("nariz");
-                        $("#imprimir").html(selected);
-                    }
-                    function btn_pelo(e){
-                        selected = "pelo";
-                        console.log("pelo");
-                        $("#imprimir").html(selected);
-                     }
-                    function btn_bup(e){
-                        selected = "bup";
-                        console.log("bup");
-                        $("#imprimir").html(selected);
-                     }
-                     function btn_bdown(e){
-                        selected = "bdown";
-                        console.log("bdown");
-                        $("#imprimir").html(selected);
-                     }
-                     function btn_shoes(e){
-                        selected = "shoes";
-                        console.log("shoes");
-                        $("#imprimir").html(selected);
-                     }
-                    
-                    function updateAvatar(cont_obj,pixels){
-                        $("#"+selected).css("background", "url('img/"+selected + ".png') no-repeat -"+ (cont_obj[selected] * pixels) +"px 0px");
-                    }               
-                    
-                </script>
+		<script type="text/javascript" src="avatar.js"></script>
 	</head>
 	<body>
-                <div id="btn_izq" class="btn"><</div>
-                <div id="ojo_btn" class="btn">OJOS</div>
-                <div id="ceja_btn" class="btn">CEJAS</div>
-                <div id="boca_btn" class="btn">BOCAS</div>
-                <div id="nariz_btn" class="btn">NARIZ</div>
-                <div id="pelo_btn" class="btn">PELO</div>
-                <div id="bup_btn" class="btn">UP</div>
-                <div id="bdown_btn" class="btn">DOWN</div>
-                <div id="shoes_btn" class="btn">SHOES</div>
+		
+		<div id="botones" class="btn">
+			<div id="lentes_btn" class="btn">LENTES</div>
+			<div id="ojo_btn" class="btn">OJOS</div>
+			<div id="ceja_btn" class="btn">CEJAS</div>
+			<div id="boca_btn" class="btn">BOCAS</div>
+			<div id="nariz_btn" class="btn">NARIZ</div>
+			<div id="pelo_btn" class="btn">PELO</div>
+			<div id="bup_btn" class="btn">UP</div>
+			<div id="bdown_btn" class="btn">DOWN</div>
+			<div id="shoes_btn" class="btn">SHOES</div>
+		</div>
                      
                 <div id="avatar_wrap">
-                        <div id="fondo" class="avatar_face_part"></div>
-                    <div id="avatar_face_wrap">
+                        <div id="fondoavatar" class="avatar_face_part"></div>
+		<div id="avatar_face_wrap">
+			<div id="lentes" class="avatar_face_part"></div>
                         <div id="ojos" class="avatar_face_part"></div>
                         <div id="cejas" class="avatar_face_part"></div>
                         <div id="nariz" class="avatar_face_part"></div>
@@ -193,9 +32,12 @@
                         <div id="bdown" class="avatar_body_part"></div>
                         <div id="bup" class="avatar_body_part"></div>
                         
-                        </div>
+		    </div>
                 </div>
-                <div id="btn_der" class="btn">></div>
+		<div id="flechas" class="btn_fle">
+			<div id="btn_izq" class="btn_fle"> < </div>
+			<div id="btn_der" class="btn_fle">></div>
+		</div>
                 <div id="imprimir"></div>
                 
 	</body>
