@@ -8,35 +8,39 @@
     width:90px;                        
     height:323px;
     top: -5px;
-    left: -22px;
+    left: -24px;
+}
+
+.green_select{
+    background: #63B722  !important;   
 }
 
 
-.btn{
-    display: block;
+.btn_select{
+    font-family: Quicksand, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FFF;
+    border: 6px solid #FFF;
     
-}
-#lentes_btn,#ojo_btn,#ceja_btn,#boca_btn,#nariz_btn,#pelo_btn,#bup_btn,#bdown_btn,#shoes_btn{
-    position: relative;
-    top: 20px;
-    left: 20px;
-    border: 3px solid #24A1B3;
-    border-radius: 10px;
-    margin-top: 2px;
-    width: 120px;
-    height: 30px;
-    text-align: center;
-    padding-left: 5px;
-    
-    background: rgb(251,254,254);
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZiZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U5ZjdmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5OGQ4ZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, rgba(251,254,254,1) 1%, rgba(233,247,250,1) 50%, rgba(152,216,226,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(251,254,254,1)), color-stop(50%,rgba(233,247,250,1)), color-stop(100%,rgba(152,216,226,1)));
-    background: -webkit-linear-gradient(top, rgba(251,254,254,1) 1%,rgba(233,247,250,1) 50%,rgba(152,216,226,1) 100%);
-    background: -o-linear-gradient(top, rgba(251,254,254,1) 1%,rgba(233,247,250,1) 50%,rgba(152,216,226,1) 100%);
-    background: -ms-linear-gradient(top, rgba(251,254,254,1) 1%,rgba(233,247,250,1) 50%,rgba(152,216,226,1) 100%);
-    background: linear-gradient(top, rgba(251,254,254,1) 1%,rgba(233,247,250,1) 50%,rgba(152,216,226,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfefe', endColorstr='#98d8e2',GradientType=0 );
+    padding: 6px 0px 6px 0px;
+    text-align: center; 
+    width: 140px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: #666 0px 0px 2px;
+    -moz-box-shadow: #666 0px 0px 2px;
+    box-shadow: #666 0px 0px 2px;
+    background: #32ACC7;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#32ACC7), to(#32ACC7));
+    background: -webkit-linear-gradient(#32ACC7, #32ACC7);
+    background: -moz-linear-gradient(#32ACC7, #32ACC7);
+    background: -ms-linear-gradient(#32ACC7, #32ACC7);
+    background: -o-linear-gradient(#32ACC7, #32ACC7);
+    background: linear-gradient(#32ACC7, #32ACC7);
+    -pie-background: linear-gradient(#32ACC7, #32ACC7);
+    behavior: url(/PIE.htc);
     
 }
 
@@ -57,41 +61,7 @@
     top: 3px;
     left: 30px;
 }
-#lentes{
-    background: url('img/lentes.png') no-repeat 0px 0px;
-}
 
-#ojos{
-    background: url('img/ojos.png') no-repeat 0px 0px;
-}
-
-#cejas{
-    background: url('img/cejas.png') no-repeat 0px 0px;
-}
-
-#nariz{
-    background: url('img/nariz.png') no-repeat 0px 0px;
-}
-
-#bocas{
-    background: url('img/bocas.png') no-repeat 0px 0px;
-}
-
-#pelo{
-    background: url('img/pelo.png') no-repeat 0px 0px;
-}
-
-#bup{
-    background: url('img/bup.png') no-repeat 0px 0px;
-}
-
-#bdown{
-    background: url('img/bdown.png') no-repeat 0px 0px;
-}
-
-#shoes{
-    background: url('img/shoes.png') no-repeat 0px 0px;
-}
 #fondo{
      background: url('img/fondo.png') no-repeat 0px 0px;
      width: 960px;
@@ -118,10 +88,9 @@
 }
 #botones{
     position: relative;
-    left: 170px;
-    top: 150px;
+    left: 190px;
+    top: 130px;
 }
-
 
 #imprimir{
     position: absolute;
@@ -132,8 +101,6 @@
     background: #FFC;
     width: 150px;
     height: 29px;
-   /* border: 1px solid;*/
-    
     font-size: 25px;
     font-weight: bold;
     color: #6C1786;
