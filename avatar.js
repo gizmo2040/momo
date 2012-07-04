@@ -4,30 +4,38 @@ var configObj = {
 	},
 	"ojos":{
 		"file": 'img/ojo.png',
-		"width": 50,
-		"height": 50,                
+		"width": 100,
+		"height": 323,                
 		"selected": 1,
+                "top": -5,
+                "left": -22,
                 "max":4
 	},
 	"cejas":{
                 "file": 'img/ceja.png',
-		"width": 50,
-                "height": 50,
+		"width": 100,
+                "height": 323,
                 "selected": 1,
+                 "top": -5,
+                "left": -22,
                 "max":4
     },
     "nariz":{
                 "file": 'img/nariz.png',
-		"width": 50,
-                "height": 50,
+		"width": 100,
+                "height": 323,
 		"selected": 1,
+                 "top": -5,
+                "left": -22,
                 "max":4
     },
     "bocas":{
                 "file": 'img/boca.png',
-		"width": 50,
-                "height": 50,
+		"width": 100,
+                "height": 323,
 		"selected": 1,
+                 "top": -5,
+                "left": -22,
                 "max":4
     },
     "pelo":{
@@ -119,7 +127,7 @@ var configObj = {
                     
                     
                     function btn_izq_cfun(e){  
-                        if(--configObj[selected].selected <=0) configObj[selected].selected = configObj[selected].max;
+                        if(--configObj[selected].selected <= 0) configObj[selected].selected = configObj[selected].max -1;
                         updateAvatar();
                     }                
                     function btn_der_cfun(e){
