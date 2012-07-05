@@ -1,77 +1,51 @@
+var avatarHeigth = 323;
+var avatarWidth = 110;
+
 var configObj = {
-	"base":{
-		"file":'img/ninabase.png'
-	},
-	"ojos":{
-		"file": 'img/ojo.png',
-		"width": 100,
-		"height": 323,                
-		"selected": 1,
-                "top": -5,
-                "left": -22,
-                "max":4
-	},
-	"cejas":{
+  "base":{
+    "file":'img/ninabase.png',
+    "selected": 1,
+    "max":1
+  },
+  "ojos":{
+    "file": 'img/ojo.png',
+    "selected": 1,
+    "max":4
+  },
+  "cejas":{
                 "file": 'img/ceja.png',
-		"width": 100,
-                "height": 323,
                 "selected": 1,
-                 "top": -5,
-                "left": -22,
                 "max":4
     },
     "nariz":{
                 "file": 'img/nariz.png',
-		"width": 100,
-                "height": 323,
-		"selected": 1,
-                 "top": -5,
-                "left": -22,
+    "selected": 1,
                 "max":4
     },
     "bocas":{
                 "file": 'img/boca.png',
-		"width": 100,
-                "height": 323,
-		"selected": 1,
-                 "top": -5,
-                "left": -22,
+    "selected": 1,
                 "max":4
     },
     "pelo":{
                 "file": 'img/pelo.png',
-		"width": 100,
-                "height": 323,
-		"selected": 1,
-                "top": -5,
-                "left": -22,
+    "selected": 1,
                 "max":4
     },
     "bup":{
                 "file": 'img/bup.png',
-		"width": 100,
-                "height": 323,
-		"selected": 1,
-                "top": -5,
-                "left": -22,
-                "max":4
-    },
-    "bdown":{
-                "file": 'img/bdown.png',
-		"width": 100,
-                "height": 323,
-		"selected": 1,
-                "top": -5,
-                "left": -22,
+    "selected": 1,
                 "max":4
     },
     "shoes":{
                 "file": 'img/shoes.png',
-		"width": 100,
-                "height": 323,
-		"selected": 1,
-                "top": -5,
-                "left": -22,
+    "selected": 1,
+                "max":4
+    },
+
+    "bdown":{
+                "file": 'img/bdown.png',
+    "selected": 1,
                 "max":4
     }
 }
@@ -115,10 +89,8 @@ var configObj = {
                                     
                               });
                               tmpDiv.css("position","absolute")
-                              configObj[key]["width"] && tmpDiv.css("width",configObj[key]["width"]);
-                              configObj[key]["height"] && tmpDiv.css("height",configObj[key]["height"]);
-                              configObj[key]["top"] && tmpDiv.css("top",configObj[key]["top"]);
-                              configObj[key]["left"] && tmpDiv.css("left",configObj[key]["left"]);
+                              tmpDiv.css("width",avatarWidth);
+                              tmpDiv.css("height",avatarHeigth);
                               configObj[key]["file"] && tmpDiv.css("background", "url('"+ configObj[key]["file"] + "') no-repeat 0px 0px");
                               tmpDiv.appendTo("#avatar_face_wrap");
                               console.log("---->",key,configObj[key])                              
@@ -144,7 +116,7 @@ var configObj = {
                     }
                                         
                     function updateAvatar(cont_obj,pixels){
-                        $("#avatar_part_"+selected).css("background", "url('"+ configObj[selected]["file"] + "') no-repeat -"+ (configObj[selected]["width"] * configObj[selected]["selected"]) + "px 0px");
+                        $("#avatar_part_"+selected).css("background", "url('"+ configObj[selected]["file"] + "') no-repeat -"+ (avatarWidth * configObj[selected]["selected"]) + "px 0px");
                     }               
                     
                
