@@ -251,6 +251,70 @@ left: 8px;
 	color: white;
 	font-weight: bold;
 }
+/******************* PANEL PAGES *******************/
+.text_10px{
+	font-size: 10px;
+	color: white;
+	font-weight: bold;
+}
+.numbers_pages{
+	display: inline-block;
+}
+
+.select_numbers_white{
+	width: 12px;
+	height: 12px;
+	background-color: #FFFFFF;
+	color: #63666A;
+	display: none;
+}
+.select_numbers_gray{
+	width: 12px;
+	height: 12px;
+	background-color: #63666A;
+	color: #FFFFFF;
+	display: none;
+}
+
+.panel_pages{
+	position: absolute;
+	top: 50px;
+	left: 550px;
+	width: 200px;
+	height: 20px;
+	background-color: #63666A;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.panel_pages_title{
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	
+}
+.panel_pages_flecha_izq{
+	position: absolute;
+	top: 8px;
+	left: 45px;
+}
+.panel_pages_numbers{
+	position: absolute;
+	top: 0px;
+	left: 55px;
+
+}
+.panel_pages_flecha_der{
+	position: absolute;
+	top: 8px;
+	left: 138px;
+}
+.panel_pages_viewall{
+	position: absolute;
+	top: 6px;
+	left: 152px;
+	color: #F5EB5A;
+}
 
 </style>
 </head>
@@ -299,5 +363,21 @@ left: 8px;
 	<div class="icon_help"><img src="images/icon_help.png"></div>
 	<div class="title_help">help</div>
 </div>
+<div class="panel_pages">
+	<div class="select_numbers_white"></div>
+	<div class="panel_pages_title text_10px">pages</div>
+	<div class="panel_pages_flecha_izq"><img src="images/panel_pages/flecha_izq.png"></div>
+	<div class="panel_pages_numbers">
+		<div class="pages_numeros_10 text_10px numbers_pages">10</div>
+		<div class="pages_numeros_11 text_10px numbers_pages">11</div>
+		<div class="pages_numeros_12 text_10px numbers_pages">12</div>
+		<div class="pages_numeros_13 text_10px numbers_pages">13</div>
+		<div class="pages_numeros_14 text_10px numbers_pages">14</div>
+		<div class="pages_numeros_15 text_10px numbers_pages">15</div>
+	</div>	
+	<div class="panel_pages_flecha_der"><img src="images/panel_pages/flecha_der.png"></div>
+	<div class="panel_pages_viewall text_10px">view all</div>
+</div>
+
 </body>
 </html>
