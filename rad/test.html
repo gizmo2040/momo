@@ -1,6 +1,6 @@
 
 
-<!--<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
 <html>
 <head>
 <style type="text/css">
@@ -177,6 +177,80 @@ left: 8px;
 	top: 20px;
 	left: 5px;
 }
+/******************* WIZARD ******************/
+.wizard_content{
+	position: absolute;
+	top: 50px;
+	left: 280px;
+	width: 50px;
+	height: 60px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius:5px; 
+
+	background: #00abed; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYWJlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwOGNkMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDZjYjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #00abed 0%, #008cd3 50%, #006cb7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00abed), color-stop(50%,#008cd3), color-stop(100%,#006cb7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00abed 0%,#008cd3 50%,#006cb7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00abed 0%,#008cd3 50%,#006cb7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00abed 0%,#008cd3 50%,#006cb7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00abed 0%,#008cd3 50%,#006cb7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abed', endColorstr='#006cb7',GradientType=0 ); /* IE6-8 */
+
+}
+.icon_wizard{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.title_wizard{
+	position: absolute;
+	top: 40px;
+	left: 5px;
+	font-size: 10px;
+	color: white;
+	font-weight: bold;
+}
+
+/*********************** HELP ********************/
+.help_content{
+	position: absolute;
+	top: 50px;
+	left: 350px;
+	width: 50px;
+	height: 60px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius:5px;
+
+	background: #fcb12a; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjYjEyYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZjOGMxNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYzZjMDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #fcb12a 0%, #fc8c16 50%, #fc6c04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcb12a), color-stop(50%,#fc8c16), color-stop(100%,#fc6c04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcb12a 0%,#fc8c16 50%,#fc6c04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcb12a 0%,#fc8c16 50%,#fc6c04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcb12a 0%,#fc8c16 50%,#fc6c04 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcb12a 0%,#fc8c16 50%,#fc6c04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb12a', endColorstr='#fc6c04',GradientType=0 ); /* IE6-8 */
+
+}
+
+.icon_help{
+	position: absolute;
+	top: 10px;
+	left: 16px;
+}
+
+.title_help{
+	position: absolute;
+	top: 40px;
+	left: 11px;
+	font-size: 10px;
+	color: white;
+	font-weight: bold;
+}
 
 </style>
 </head>
@@ -216,6 +290,14 @@ left: 8px;
 			<div class="icon_content_horizontal"><img src="images/horizontal_icon/align4.png"></div>
 		</div>
 	</div>
+</div>
+<div class="wizard_content">
+	<div class="icon_wizard"><img src="images/icon_wizard.png"></div>
+	<div class="title_wizard">wizard</div>
+</div>
+<div class="help_content">
+	<div class="icon_help"><img src="images/icon_help.png"></div>
+	<div class="title_help">help</div>
 </div>
 </body>
 </html>
