@@ -1,24 +1,221 @@
+
+
+<!--<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
+<html>
+<head>
+<style type="text/css">
+
+body{
+	text-transform: uppercase;
+	font-family: 'Karla', sans-serif;
+
+}
+
+/*************** TOOLBAR ******************/
+.toolbar{
+	background-color: #666666;
+	height: 35px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.toolbar_item{
+	position: absolute;
+	width: 32px;
+	height: 28px;
+	top: 12px;
+	left: 20px;
+	background-color: #ff9933;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: inset 2px 2px 2px #cb8f23;
+	-webkit-box-shadow: inset 2px 2px 2px #cb8f23;
+	box-shadow: inset 2px 2px 2px #cb8f23;
+	/*Inner elements should not cover inner shadows*/
+	/*Chrome renders inset shadows incorrectly with border-radius*/
+	/*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+}
+
+.toolbar_item_title{
+	font-size: 12px;
+	margin-top: 8px;
+	margin-left: 4px;
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 1px 1px #666666;
+	}
+.toolbar_item_icon{
+	width: 40px;
+	height: 30px;
+	/*border: 1px solid white;*/
+	margin-left: 40px;
+	margin-top: -23px;
+}
+
+.toolbar_item_icon_img{
+	position: relative;
+	top: 4px;
+	left: 14px;
+}
+.toolbar_item_icon_title{
+	position: relative;
+	font-weight: bold;
+	font-size: 8px;
+	color: #FFFFFF;
+	top: 8px;
+	left: 2px;
+}
+
+/**************************** PANEL *****************************/
+.rad_panel{
+	position: absolute;
+	top: 50px;
+
+}
+
+.rad_panel{
+	width: 220px;
+	height: 110px;
+	background-color: #EEEEEE;
+	border: 1px solid #A4ACB4;
+	border-radius: 5px;
+}
+
+.rad_panel_flecha{
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	width: 15px;
+}
+.rad_panel_title_wrap{
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	width: 170px;
+	height: 20px;
+	background-color: #ff9933;
+	border-radius: 5px;
+
+}
+.rad_panel_icon{
+	position: absolute;
+	top: 3px;
+	left: 4px;
+}
+.rad_panel_title_icon{
+	position: absolute;
+	top: 3px;
+	left: 20px;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.rad_panel_title_dots{
+	position: absolute;
+	top: 3px;
+	left: 151px;
+}
+.rad_panel_close{
+	position: absolute;
+	top: 10px;
+	left: 200px;
+}
+
+.horizontal_line{
+position: absolute;
+top: 30px;
+left: 8px;
+}
+
+/*****vertical**********/
+.panel_content_vertical{
+	position: absolute;
+	width: 68px;
+	height: 36px;
+	top: 40px;
+	left: 10px;
+	/*background-color: #CEADAD;*/
+}
+
+.title_content_vertical{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	font-size: 11px;
+	color: #63666A;
+
+}
+
+.icon_content_vertical{
+	position: absolute;
+	top: 20px;
+	left: 5px;
+}
+
+.panel_content_horizontal{
+	position: absolute;
+	width: 68px;
+	height: 36px;
+	top: 40px;
+	left: 140px;
+	/*background-color: #CEADAD;*/
+}
+
+.title_content_horizontal{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	font-size: 11px;
+	color: #63666A;
+}
+
+.icon_content_horizontal{
+	position: absolute;
+	top: 20px;
+	left: 5px;
+}
+
+</style>
+</head>
+<body>
+	
 <div id="toolbar" class="toolbar">
 	<div id="title" class="toolbar_title"></div>
 	<div id="content" class="toolbar_content">
-		<div class="toolbar_item">
+		<div class="toolbar_item">	
+			<div class="toolbar_item_title">add</div>
 			<div class="toolbar_item_icon">
-				<img src="" alt=""/>
+				<div class="toolbar_item_icon_img"><img src="images/content2.png"></div>
+				<div class="toolbar_item_icon_title">content</div>
 			</div>
-			<div class="toolbar_item_title"></div>
+		
 		</div>
 	</div>
 </div>
 
 
 <div id="panel" class="rad_panel">
-	<div class="rad_panel_flecha"></div>
+	<div class="rad_panel_flecha"><img src="images/panel_flecha.png"></div>
 	<div class="rad_panel_title_wrap">
-		<img src="" alt="" class="rad_panel_title_icon">
-		<div class="rad_panel_title"></div>
-		<div class="rad_panel_title_dots"></div>
+		<div class="rad_panel_icon"><img src="images/align1.png"></div>
+		<div class="rad_panel_title_icon">alignment</div>
+		<div class="rad_panel_title_dots"><img src="images/panel_puntos.png"></div>
 	</div>
-	<div class="rad_panel_close"></div>
-	<div class="horizontal_line"></div>
-	<div class="rad_panel_content"></div>
+	<div class="rad_panel_close"><img src="images/panel_tacha.png"></div>
+	<div class="horizontal_line"><img src="images/panel_linea.png"></div>
+	<div class="rad_panel_content">
+		<div class="panel_content_vertical">
+			<div class="title_content_vertical">vertical</div>
+			<div class="icon_content_vertical"><img src="images/vertical_icon/align1.png"></div>
+		</div>
+		<div class="panel_content_horizontal">
+			<div class="title_content_horizontal">horizontal</div>
+			<div class="icon_content_horizontal"><img src="images/horizontal_icon/align4.png"></div>
+		</div>
+	</div>
 </div>
+</body>
+</html>
