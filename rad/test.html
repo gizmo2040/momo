@@ -316,6 +316,128 @@ left: 8px;
 	color: #F5EB5A;
 }
 
+/****************** FORM WIZARD *****************/
+.form_content_wizard{
+	position: absolute;
+	top: 50px;
+	left: 890px;
+	width: 360px;
+	height: 600px;
+	background-color: #E8EAEF;
+	border: 1px solid #D7D9DD;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 2px 1px #DFE1E6;
+}
+
+.content_wizard_tacha{
+	position: absolute;
+	top: 14px;
+	left: 334px;
+}
+
+.content_wizard_title{
+	position: absolute;
+	top: 30px;
+	left:10px;
+	color: #63666A;
+	font-size: 30px;
+	text-shadow: 2px 3px 1px #D7D9DD;
+	font-weight: bold;
+}
+
+.content_wizard_inputs{
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	width: 320px;
+	height: 320px;
+	/*border: 1px solid #000; 	*/
+}
+
+.wizard_inputs{
+	position: absolute;
+	width: 246px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #BBC4CE; 
+	background-color: #FFFFFF;
+}
+.wizard_inputs_yellow{
+	position: absolute;
+	width: 246px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #BBC4CE;  
+	background-color: #FCB22B;
+}
+.wizard_input1{
+	top: 10px;	
+}
+
+.wizard_input2{
+	top: 40px;
+}
+.wizard_input3{
+	top: 120px;
+}
+
+.wizard_input4{
+	top: 150px;
+}
+.wizard_input5{
+	top: 180px;
+}
+.wizard_input6{
+	top: 210px;	
+}
+
+.input_flecha{
+	position: absolute;
+	top: 7px;
+	left: 230px;
+}
+
+.input_title{
+	position: absolute;
+	left: 10px;
+	font-size: 15px;
+	color: #63666A;
+}
+.input_title_yellow{
+	position: absolute;
+	left: 10px;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+.input_content{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	width: 230px;
+	color: #333333;
+	font-size: 12px;
+}
+
+.input_link{
+	position: absolute;
+	top: 60px;
+	left: 10px;
+	font-size: 12px;
+}
+
+.input_link a{
+	color: #0064B1;
+	text-decoration: none;
+}
+
+/********************* ICONO TALELY ***********************/
+.icon_talely{
+	position: absolute;
+	top: 130px;
+	left: 620px;
+}
+
+
 </style>
 </head>
 <body>
@@ -355,6 +477,8 @@ left: 8px;
 		</div>
 	</div>
 </div>
+
+
 <div class="wizard_content">
 	<div class="icon_wizard"><img src="images/icon_wizard.png"></div>
 	<div class="title_wizard">wizard</div>
@@ -363,6 +487,8 @@ left: 8px;
 	<div class="icon_help"><img src="images/icon_help.png"></div>
 	<div class="title_help">help</div>
 </div>
+
+
 <div class="panel_pages">
 	<div class="select_numbers_white"></div>
 	<div class="panel_pages_title text_10px">pages</div>
@@ -379,5 +505,39 @@ left: 8px;
 	<div class="panel_pages_viewall text_10px">view all</div>
 </div>
 
+
+<div class="form_content_wizard">
+	<div class="content_wizard_tacha wizard_input"><img src="images/panel_tacha.png"></div>
+	<div class="content_wizard_title">wizard</div>
+	<div class="content_wizard_inputs">
+		<div class="wizard_input1 wizard_inputs wizard_input_position">
+			<div class="input_title">1 - Name it</div>
+			<div class="input_flecha"><img src="images/form_wizard/flecha_gray.png"></div>
+		</div>
+		<div class="wizard_input2 wizard_inputs_yellow wizard_input_position">
+			<div class="input_title_yellow">2 - picture</div>
+			<div class="input_flecha"><img src="images/form_wizard/flecha_white.png"></div>
+			<div class="input_content">add a picture of you <span style="font-weight:bold;">before meeting</span> your partner</div>
+			<div class="input_link"><a href="http://www.google.com.mx" target="_blank"> >>click here to edit. </a></div>
+		</div>
+		<div class="wizard_input3 wizard_inputs wizard_input_position">
+			<div class="input_title">3 - describe</div>
+			<div class="input_flecha"><img src="images/form_wizard/flecha_gray.png"></div>
+		</div>
+		<div class="wizard_input4 wizard_inputs wizard_input_position">
+			<div class="input_title">4 - quote</div>
+			<div class="input_flecha"><img src="images/form_wizard/flecha_gray.png"></div>
+		</div>
+		<div class="wizard_input5 wizard_inputs wizard_input_position">
+			<div class="input_title">5 - hobbies</div>
+			<div class="input_flecha"><img src="images/form_wizard/flecha_gray.png"></div>
+		</div>
+		<div class="wizard_input6 wizard_inputs wizard_input_position">
+			<div class="input_title">6 - gallery</div>
+			<div class="input_flecha"><img src="images/form_wizard/flecha_gray.png"></div>
+		</div>
+	</div>
+</div>
+<div class="icon_talely"><img src="images/icon_talely.png"></div>
 </body>
 </html>
