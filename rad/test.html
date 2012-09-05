@@ -610,10 +610,71 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63666a', end
 }
 
 
+/************** toolbar_drag ************/
+.toolbar_drag{
+	position: absolute;
+	top: 40px;
+	left: 170px;
+	text-transform: none;
+}
+.icon_drag{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+.icon_drag_select{
+	position: absolute;
+	top: 120px;
+	left: 100px;		
+}
+.text_drag{
+	position: absolute;
+	top: 100px;
+	left: 115px;
+	color:#63666A;
+	font-weight: bold;
+	font-size: 12px;
+}
+/********************* resolution *************/
+.toolbar_resolution{
+	position: absolute;
+	top: 200px;
+	left: 270px;
+	text-transform: none;
+	background-color: #63666A;
+	width: 83px;
+	height: 16px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 
+}
+.size_resolution{
+	position: absolute;
+	font-size: 12px;
+	color: #FFFFFF;
+	left: 5px;
+
+}
+.flecha_resolution{
+	position: absolute;
+	top: 5px;
+	left: 70px;
+
+}
 </style>
 </head>
 <body>
+<div class="toolbar_drag">
+	<div class="icon_drag"><img src="images/drag/icon_drag.png"></div>
+	<div class="icon_drag_select"><img src="images/drag/icon_drag_select.png"></div>
+	<div class="text_drag"> drag</div>
+</div>
+
+<div class="toolbar_resolution">
+	<div class="size_resolution">1200 x 600</div>
+	<div class="flecha_resolution"><img src="images/resolution/flecha_resolution.png"></div></div>
+</div>
+
 	
 <div id="toolbar" class="toolbar">
 	<div id="title" class="toolbar_title"></div>
